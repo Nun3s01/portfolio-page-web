@@ -16,7 +16,7 @@
             <ul>
                 <p style="font-family: Arial; font-size: 19px">
                     Acesse meu portfólio
-                    <a href="https://nun3s01.github.io/portfolio-page-web/"><u>aqui.</u></a>
+                    <a href="https://nun3s01.github.io/portfolio-page-web/" target=”_blank”><u>aqui.</u></a>
                 </p>
             </ul>
     </div>
