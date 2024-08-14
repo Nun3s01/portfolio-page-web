@@ -6,13 +6,13 @@
         </h1>
     </div>
     <div style="font-family: Times New Roman; position: relative; min-height: 100vh">
-        <h2>
+        <h3>
             <ul style="font-family: Times New Roman">
                 <li style="font-size: 21px">
                     Página Web  
                 </li>
             </ul>
-        </h2>
+        </h3>
             <ul>
                 <p style="font-family: Arial; font-size: 19px">
                     Acesse meu portfólio
@@ -20,6 +20,14 @@
                 </p>
             </ul>
     </div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
     <div>
         <i><u><footer style="text-align: center; font-family: Times New Roman; bottom: 0;">Criado por Cauã Nunes Novaes</footer></u></i>
     </div>
