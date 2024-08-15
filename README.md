@@ -1,7 +1,7 @@
 ## PORTFÓLIO PROFISSIONAL
 
 
-### [I] [Acesse meu portfólio aqui.]((https://nun3s01.github.io/portfolio-page-web/){:target="_blank"})
+### [Acesse meu portfólio aqui.]((https://nun3s01.github.io/portfolio-page-web/){:target="_blank"})
 
 
 
