@@ -39,10 +39,6 @@ header {
     text-transform: uppercase;
 }
 
-
-
-
-
 #navegation_header a {
     text-decoration: none;
     color: black;
@@ -85,4 +81,23 @@ header {
 #navegation_header a:hover {
     border-top: 2px solid black;
     border-bottom: 2px solid black; 
+}
+
+
+
+
+
+
+#div_SOBRE_MIM {
+    color: #fafafc;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+
+.h1_SOBRE_MIM {
+    color: #fafafc;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2px;
 }
