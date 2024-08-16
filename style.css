@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background: #080808;
+    background-color: #fafafc;
     padding: 20px 0;
 }
 
@@ -32,9 +32,57 @@ header {
 }
 
 #navegation_header ul li a {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 19px;
-    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #111214;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+
+
+
+
+#navegation_header a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 22px;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+#navegation_header a::before #navegation_header a::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+#navegation_header a::before {
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#navegation_header a::after {
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+#navegation_header a:hover::before #navegation_header a:hover::after {
+    transform: scaleX(1);
+}
+
+#navegation_header a:hover {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black; 
 }
