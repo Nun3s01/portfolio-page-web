@@ -7,10 +7,11 @@ header {
     padding: 20px 0;
 }
 
-#caixa{
+#caixa {
     position: relative;
     margin: 0 auto;
-    width:940px;
+    width: 940px;
+    
 }
 
 #neavegation_header {
@@ -26,8 +27,8 @@ header {
 
 #navegation_header ul li {
     list-style-type: none;
-    display: inline-block; 
-    margin: 0 15px 0 15px;    
+    display: inline-block;
+    margin: 0 15px 0 15px;
     padding: 0px;
 }
 
@@ -80,7 +81,7 @@ header {
 
 #navegation_header a:hover {
     border-top: 2px solid black;
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid black;
 }
 
 
@@ -89,15 +90,41 @@ header {
 #div_SOBRE_MIM {
     display: flexbox;
     color: #fafafc;
-    font-family: sans-serif;
     font-weight: bold;
     margin: 10% 0px 100px 30%;
 }
 
-.text-sobre-mim.h1 {
+.h1-sobre-mim {
     color: #fafafc;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
     letter-spacing: 2px;
     text-shadow: 0px 0px 45px rgb(255, 255, 255);
+}
+
+.p-sobre-mim {
+    font-family: sans-serif;
+    text-indent: 5%;
+}
+
+
+
+
+
+
+#div_SOBRE_MIM {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
 }
