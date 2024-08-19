@@ -86,18 +86,18 @@ header {
 
 
 
-
-
 #div_SOBRE_MIM {
+    display: flexbox;
     color: #fafafc;
     font-family: sans-serif;
     font-weight: bold;
-
+    margin: 10% 0px 100px 30%;
 }
 
-.h1_SOBRE_MIM {
+.text-sobre-mim.h1 {
     color: #fafafc;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
     letter-spacing: 2px;
+    text-shadow: 0px 0px 45px rgb(255, 255, 255);
 }
