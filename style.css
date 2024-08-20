@@ -1,17 +1,25 @@
 body {
     background-color: #111214;
+    height: 2000px;
 }
 
+/*  1. Cabeçalho - navegação  */
 header {
     background-color: #fafafc;
     padding: 20px 0;
+    box-shadow: -10px 10px 10px #000000;
+    position: fixed;
+    top:-2em;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 #caixa {
     position: relative;
     margin: 0 auto;
     width: 940px;
-    
+
 }
 
 #neavegation_header {
@@ -84,43 +92,66 @@ header {
     border-bottom: 2px solid black;
 }
 
-
-
-
+/*  2. SOBRE-MIM  */
 #div_SOBRE_MIM {
-    display: flexbox;
-    color: #fafafc;
+    width: 100%;
+    color: #111214;
     font-weight: bold;
-    margin: 10% 0px 100px 30%;
+    margin: 10% 0px 0px 1%;
+}
+
+.container-SOBRE_MIM {
+    background-color: #fafafc;
+    margin-left: 10%;
+    margin-top: 15%;
+    padding: 2% 0px 1.2% 20px;
+    box-shadow: -10px 15px 30px #000000;
 }
 
 .h1-sobre-mim {
-    color: #fafafc;
+    margin-left: 20px;
+    margin: -42px 0px 0px 0px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-fill-color: transparent;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: lighter;
+    font-size: 30px;
     letter-spacing: 2px;
-    text-shadow: 0px 0px 45px rgb(255, 255, 255);
+    text-shadow: -2px 10px 20px #000000;
 }
 
 .p-sobre-mim {
+    text-align: justify;
+    margin-right: 55%;
+    margin-top: 55px;
+    word-break: break-all;
     font-family: sans-serif;
-    text-indent: 5%;
+    text-indent: 18%;
 }
 
+/*  2.3 foto SOBRE-MIM  */
+.img-sobre-mim {
+    margin: 0px 0px 0px 149px;
+    width: 10%;
+    border: 3.5px solid #ebebeb;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
-
-
-
-
+/*  2.2 animação SOBRE-MIM  */
 #div_SOBRE_MIM {
-    animation-duration: 3s;
-    animation-name: slidein;
+    animation-duration: 0.7s;
+    animation-name: div_SOBRE_MIM;
 }
-
-@keyframes slidein {
+@keyframes div_SOBRE_MIM {
     from {
-        translate: 150vw 0;
-        scale: 200% 1;
+        translate: 500vw 0;
+        scale: 200% 0;
     }
 
     to {
