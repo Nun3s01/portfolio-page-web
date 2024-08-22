@@ -166,8 +166,8 @@ header {
 
 /*  3 PROJETOS & DESING  */
 #div_PROJETOS-DESIGN {
-padding: 100%;
-    outline-style: dotted;
+    padding: 100%;
+    outline-style: solid;
     outline-color: #ffffff;
-    outline-width: 2px;
+    outline-width: 10px;
 }
