@@ -1,0 +1,257 @@
+@font-face {
+    font-family: GaretBook;
+    src: url(assets/Garet-Book.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: GaretHeavy;
+    src: url(assets/Garet-Heavy.ttf) format(truetype);
+}
+
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111214;
+    height: 2000px;
+}
+
+
+
+/*  1. Cabeçalho - navegação  */
+header {
+    background-color: #111214;
+    box-shadow: 0px 2px 7px #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#caixa {
+    position: relative;
+    margin: 0px auto;
+}
+
+#navegation_header ul {
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#navegation_header ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+}
+
+#navegation_header ul li a {
+    font-family: GaretBook;
+    font-weight: 100;
+    font-size: 13px;
+    color: #fafafc;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#navegation_header a {
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 10px 22px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+#navegation_header a::before #navegation_header a::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+#navegation_header a::before {
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+#navegation_header a::after {
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+#navegation_header a:hover::before #navegation_header a:hover::after {
+    transform: scaleX(1);
+}
+
+#navegation_header a:hover {
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/*  2. BODY ELEMENTOS  */
+#container01mark {
+    background-color: aqua;
+    margin-top: 300px;
+}
+
+/*  3. CAUÃ NUNES NOVAES - MAIN  */
+#intro-main {
+    
+}
+
+/*  3.1 ESTRUTURA CIMA  */
+.linha_cima {
+    width: 600px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2.5px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+.linha_cima_direita {
+    margin-top: 20px;
+    margin-left: 303px;
+    width: 0px;
+    height: 40px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2.5px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+.linha_cima_esquerda {
+    margin-top: 20px;
+    margin-left: -303px;
+    width: 0px;
+    height: 40px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2.5px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+/*  3.2 CAUÃ NUNES NOVAES - TEXT  */
+.cauanunesnovaes p {
+    font-family: GaretBook;
+    font-weight: bold;
+    font-size: 75px;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fafafc;
+}
+
+/*  3.3 ESTRUTURA BAIXO  */
+.linha_baixo {
+    width: 600px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2.5px;
+    position: absolute;
+    top: 460px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+.linha_baixo_direita {
+    margin-top: 20px;
+    margin-left: 303px;
+    width: 0px;
+    height: 40px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2.5px;
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+.linha_baixo_esquerda {
+    margin-top: 20px;
+    margin-left: -303px;
+    width: 0px;
+    height: 40px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2.5px;
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 20px #ffffff;
+}
+
+/*  4 animação  -  CONTAINER - MAIN  */
+#container-main {
+    height: 100%;
+    background-color: #fafafc;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: all 0.9s ease-out;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    #container-main {
+        transform: translateY(25vh); 
+    }
+}
+
+@media (max-width: 480px) {
+    #container-main {
+        transform: translateY(30vh);
+    }
+}
+
+#container-main.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*  5 sobre-mim  -  CONTAINER - MAIN  */
+#sobre-mim {
+    align-items: center;
+    justify-content: center;
+}
+#sobre-mim h1 {
+    padding: 220px 0px 20px 200px;
+    margin: 0px 0px 0px 0px;
+    font-family: GaretHeavy;
+    font-size: 50px;
+    color: #111214;
+}
+#sobre-mim p {
+    padding: 0px 0px px 0px;
+    margin: 20px 350px 0px 200px;
+    text-indent: 85px;
+    word-break: break-all;
+}
