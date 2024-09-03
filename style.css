@@ -17,21 +17,22 @@ html {
 }
 
 body {
-    background-color: #111214;
+    background-color: #000000;
     height: 2000px;
 }
 
 
 
 /*  1. Cabeçalho - navegação  */
-header {
-    background-color: #111214;
-    box-shadow: 0px 2px 7px #000000;
+.bar-navigation {
+    background-color: #000000;
+    box-shadow: 0px 1px 7px #000000;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1;
+    color: #000000;
 }
 
 #caixa {
@@ -39,19 +40,19 @@ header {
     margin: 0px auto;
 }
 
-#navegation_header ul {
+#navigation_header ul {
     text-align: center;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
 
-#navegation_header ul li {
+#navigation_header ul li {
     list-style-type: none;
     display: inline-block;
     margin: 10px 0px 10px 0px;
 }
 
-#navegation_header ul li a {
+#navigation_header ul li a {
     font-family: GaretBook;
     font-weight: 100;
     font-size: 13px;
@@ -61,7 +62,7 @@ header {
     letter-spacing: 1px;
 }
 
-#navegation_header a {
+#navigation_header a {
     text-decoration: none;
     font-weight: bold;
     position: relative;
@@ -72,7 +73,7 @@ header {
     border-bottom: 2px solid transparent;
 }
 
-#navegation_header a::before #navegation_header a::after {
+#navigation_header a::before #navigation_header a::after {
     content: '';
     position: absolute;
     height: 100%;
@@ -82,25 +83,36 @@ header {
     transition: all 0.4s ease-in-out;
 }
 
-#navegation_header a::before {
+#navigation_header a::before {
     left: 0;
     transform: scaleX(0);
     transform-origin: left;
 }
 
-#navegation_header a::after {
+#navigation_header a::after {
     right: 0;
     transform: scaleX(0);
     transform-origin: right;
 }
 
-#navegation_header a:hover::before #navegation_header a:hover::after {
+#navigation_header a:hover::before #navigation_header a:hover::after {
     transform: scaleX(1);
 }
 
-#navegation_header a:hover {
+#navigation_header a:hover {
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/*  Vídeo - MAIN  */
+.video-main {
+    width: 100%;
+    height: 1350px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*  2. BODY ELEMENTOS  */
@@ -111,11 +123,10 @@ header {
 
 /*  3. CAUÃ NUNES NOVAES - MAIN  */
 #intro-main {
-    
 }
 
 /*  3.1 ESTRUTURA CIMA  */
-.linha_cima {
+linha_cima {
     width: 600px;
     border-style: solid;
     border-color: #ffffff;
@@ -127,7 +138,7 @@ header {
     box-shadow: 0px 0px 20px #ffffff;
 }
 
-.linha_cima_direita {
+linha_cima_direita {
     margin-top: 20px;
     margin-left: 303px;
     width: 0px;
@@ -142,7 +153,7 @@ header {
     box-shadow: 0px 0px 20px #ffffff;
 }
 
-.linha_cima_esquerda {
+linha_cima_esquerda {
     margin-top: 20px;
     margin-left: -303px;
     width: 0px;
@@ -158,17 +169,22 @@ header {
 }
 
 /*  3.2 CAUÃ NUNES NOVAES - TEXT  */
-.cauanunesnovaes p {
+.cauanunesnovaes h1 {
+    margin: 0px 0px 0px 0px;
     font-family: GaretBook;
     font-weight: bold;
     font-size: 75px;
     text-align: center;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fafafc;
+    color: #fafafc;
+    position: absolute;
+    top: 355px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px #000000;
 }
 
 /*  3.3 ESTRUTURA BAIXO  */
-.linha_baixo {
+linha_baixo {
     width: 600px;
     border-style: solid;
     border-color: #ffffff;
@@ -180,7 +196,7 @@ header {
     box-shadow: 0px 0px 20px #ffffff;
 }
 
-.linha_baixo_direita {
+linha_baixo_direita {
     margin-top: 20px;
     margin-left: 303px;
     width: 0px;
@@ -195,7 +211,7 @@ header {
     box-shadow: 0px 0px 20px #ffffff;
 }
 
-.linha_baixo_esquerda {
+linha_baixo_esquerda {
     margin-top: 20px;
     margin-left: -303px;
     width: 0px;
@@ -215,8 +231,8 @@ header {
     height: 100%;
     background-color: #fafafc;
     opacity: 0;
-    transform: translateY(20vh);
-    transition: all 0.9s ease-out;
+    transform: translateY(30vh);
+    transition: all 0.6s ease-out;
     z-index: 1;
 }
 
