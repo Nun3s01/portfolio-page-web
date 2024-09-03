@@ -8,10 +8,10 @@
 </head>
 
 <body>
-    <header>
-        <hr />
+    <header class="bar-navigation">
+        <hr style="box-shadow: 0px -1px 10px #ffffff;"/>
         <div id="caixa">
-            <nav id="navegation_header">
+            <nav id="navigation_header">
                 <ul class="animation_scroll">
                     <li><a href="#sobre-mim">SOBRE MIM</a></li>
                     <li><a href="#projetos">PROJETOS</a></li>
@@ -20,8 +20,11 @@
                 </ul>
             </nav>
         </div>
-        <hr />
+        <hr style="box-shadow: 0px 1px 10px #ffffff;"/>
     </header>
+    <video class="video-main" autoplay muted loop>
+        <source type="video/mp4" src="assets/7094565-uhd_3840_2160_25fps.mp4"/>
+    </video>
     <div id="container01mark"></div>
     <section id="intro-main">
         <div class="linha_cima"></div>
@@ -29,9 +32,9 @@
         <div class="linha_cima_esquerda"></div>
         <div>
             <div class="cauanunesnovaes">
-                <p>
+                <h1>
                     Cauã Nunes Novaes
-                </p>
+                </h1>
             </div>
         </div>
         <div class="linha_baixo"></div>
@@ -49,7 +52,7 @@
         </div>
     </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
     <script type="text/javascript" src="js/animation_scroll.js" defer></script>
     <script type="text/javascript" src="js/animation_container.js" defer></script>
 </body>
