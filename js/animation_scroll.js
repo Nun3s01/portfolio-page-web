@@ -3,6 +3,6 @@ $('.animation_scroll a[href^="#"]').on('click', function(e) {
     var id = $(this).attr('href'),
     targetOffset = $(id).offset().top;
     $('html, body').animate({
-        scrollTop: targetOffset - 75
-    }, 800);
+        scrollTop: targetOffset - 150
+    }, 500);
 });
