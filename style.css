@@ -1,0 +1,416 @@
+@font-face {
+    font-family: GaretBook;
+    src: url(assets/fonts/GARET/Garet-Book.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: GaretHeavy;
+    src: url(assets/fonts/GARET/Garet-Heavy.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: EGER-REGULAR;
+    src: url(assets/fonts/EGER/EGER-Regular.otf) format(opentype);
+}
+
+@font-face {
+    font-family: SAVIERA;
+    src: url(assets/fonts/SAVIERA/saviera.otf) format(opentype);
+}
+
+/*  Body e HTML  */
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/*  1. Cabeçalho - navegação  */
+.bar-navigation {
+    padding: 5.9px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #000000;
+    box-shadow: 0px 1px 7px #000000;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+#caixa {
+    padding: 0px;
+    margin: 0px auto;
+    position: relative;
+    z-index: 3;
+}
+#navigation_header ul {
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    z-index: 3;
+}
+#navigation_header ul li {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    list-style-type: none;
+    z-index: 3;
+}
+#navigation_header ul li a {
+    padding: 20px;
+    margin: 15px;
+    font-family: GaretBook;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 3;
+}
+#navigation_header a {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+    border-bottom: 0px solid transparent;
+    z-index: 3;
+}
+/*  1.2 Navegação - ANIMAÇÃO  */
+#navigation_header a::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s ease-in-out;
+}
+#navigation_header a::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 0.4s ease-in-out;
+}
+#navigation_header a:hover::before,
+#navigation_header a:hover::after {
+    transform: scaleX(1);
+}
+#navigation_header a:hover {
+    border-bottom: 4px solid rgb(255, 255, 255);
+    box-shadow: 0px 1px 7px #000000;
+    text-shadow: 0px 0px 5px #ffffff;
+}
+
+/*  2. Vídeo - MAIN  */
+.video-main {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, transparent 30%, rgba(0, 0, 0, 100) 90%);
+    pointer-events: none;
+    z-index: -1;
+    backdrop-filter: blur(0.9px);
+
+}
+
+/*  3. Container - ESPAÇAMENTO  */
+#container01mark {
+    margin-top: 500px;
+}
+#container02mark {
+    margin-top: 300px;
+}
+
+/*  4. CAUÃ NUNES NOVAES - MAIN  */
+#intro-main {
+    padding: 0;
+    margin: 0;
+}
+/*  4.2 CAUÃ NUNES NOVAES - TEXT  */
+.cauanunesnovaes h1 {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    font-family: GaretBook;
+    color: #fafafc;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: 2px 2px 5px #000000;
+    user-select: none;
+    top: 355px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*  5 Animação - MAIN  */
+#container-main {
+    height: 100%;
+    background-color: #fafafc;
+    opacity: 0;
+    transform: translateY(20vh);
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+}
+#container-main.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*  5.2:1 Sobre-mim - MAIN  */
+#sobre-mim {
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease-in-out;
+}
+.sobre-mim-container {
+    margin: 0px;
+    padding: 0px;
+    position: static;
+}
+.sobre-mim h1 {
+    padding: 160px 0px 20px 200px;
+    margin: 0;
+    display: block;
+    font-family: GaretHeavy;
+    color: #111214;
+    font-size: 50px;
+    border-bottom: 1px solid #111214;
+}
+.sobre-mim p {
+    padding: 0;
+    margin: 20px 350px 0px 200px;
+    font-family: GaretBook;
+    text-indent: 85px;
+    word-break: break-all;
+}
+/*  5.2:2 NETWORKS - MAIN  */
+.networks {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.networks div {
+    margin: 15% 35px 0px 35px;
+    display: inline-block;
+}
+.linkedin img,
+.github img,
+.instagram img {
+    padding: 0;
+    margin: 0;
+    max-width: 40px;
+}
+
+/*  5.3:1 Projetos - MAIN  */
+#projetos {
+    padding: 0;
+    margin: 0px 0px 350px 0px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s ease-in-out;
+}
+.projects-container {
+    background-color: #111214;
+    box-shadow: 0px -1px 15px #000000;
+    z-index: 0;
+}
+.projetos h1 {
+    padding: 160px 200px 20px 0px;
+    margin: 0;
+    font-family: GaretHeavy;
+    color: #fafafc;
+    font-size: 50px;
+    text-align: right;
+    border-bottom: 1px solid #fafafc;
+}
+/*  5.3:2 Carrossel - MAIN  */
+.carousel-container {
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    max-width: 800px;
+    overflow: hidden;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.carousel-item p {
+    font-family: GaretBook;
+    color: #fafafc;
+}
+.carousel-item img {
+    max-width: 50%;
+    box-shadow: -2px 2px 15px #000000;
+}
+.prev2, .next2 {
+    padding: 10px;
+    margin: 0;
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-style: solid;
+    border-radius: 10%;
+    border-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.prev2 {
+    left: 0.1%;
+}
+.next2 {
+    right: 0.1%;
+}
+
+/*  5.4 Desing - MAIN  */
+#design {
+    padding: 0;
+    margin: 0px 0px 350px 0px;
+    transition: all 0.8s ease-in-out;
+}
+.designs-container {
+    background-color: #fafafc;
+    box-shadow: 0px -1px 15px white;
+    z-index: 3;
+}
+.designs {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.designs h1 {
+    padding: 160px 0px 20px 200px;
+    margin: 0;
+    font-family: GaretHeavy;
+    color: #111214;
+    font-size: 50px;
+    text-align: left;
+    border-bottom: 1px solid #111214;
+}
+
+/*  6 Rodapé */
+footer {
+    padding: 10px;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    background-color: #000000;
+    bottom: 0;
+    z-index: 3;
+}
+.footer_p1 {
+    padding: 0;
+    margin: 15px;
+    font-family: SAVIERA;
+    color: #fafafc;
+    font-size: 7px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.footer_p2 {
+    padding: 0;
+    margin: 15px;
+    font-family: SAVIERA;
+    color: #fafafc;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+/*  7 @Media's - MOBILE */
+@media screen and (max-width: 900px) {
+    .container {
+        width: 90%;
+    }
+
+    body {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .header,
+    .footer {
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav a {
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
